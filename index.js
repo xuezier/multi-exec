@@ -10,7 +10,9 @@ let spawn = require('child_process').spawn;
  */
 function multiExec(cmds, callback, consoleAble) {
   function _spawn(cmd, cb) {
-    let exec = spawn(cmd);
+    let parts = cmd.split(/\s+/g);
+
+    let exec = spawn(parts[0], parts.slice(1));
 
     let _outputdata = '';
     let _outputerror = '';
