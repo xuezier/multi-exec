@@ -34,7 +34,7 @@ function multiExec(cmds, callback, consoleAble) {
         let error = new Error(`command ${cmd} exited with wrong status code ${code}`);
         error.code = code;
         error.cmd = cmd;
-        cb(error);
+        return cb(error);
       }
       cb(null);
     });
