@@ -1,6 +1,6 @@
 {
   "name": "multi-exec",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "execute multiple shell commands using node.js?",
   "main": "index.js",
   "scripts": {
@@ -13,5 +13,13 @@
     "command"
   ],
   "author": "xuezi",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xuezier/multi-exec.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xuezier/multi-exec/issues"
+  },
+  "homepage": "https://github.com/xuezier/multi-exec#readme"
 }
